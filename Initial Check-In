@@ -1,0 +1,106 @@
+#imports the library time to use time.sleep in our program
+import time
+
+#All functions
+def poemOne():
+  print("\n")
+
+  noun= input("Type in a noun. ")
+  verb= input("Type in a verb that the noun would do. ")
+  verbs= input("Type in another verb that relates to fun. ")
+  probability= input("Type in a word relating to probability. ")
+  favorite= input("Type in a random word that you like. ")
+
+  print("\n")
+  
+  #prints poem
+  print("Setting the " +noun)
+  time.sleep(1) 
+  print("\nRaising up the " +favorite)
+  time.sleep(1) 
+  print("\nShowing what is " +probability)
+  time.sleep(1) 
+  print("\nSo other may go " +verb+".") 
+  time.sleep(1) 
+  print("\nI " +probability+ " through my " +noun)
+  time.sleep(1) 
+  print("\nMany are " +verbs+ "ing today")
+  time.sleep(1) 
+  print("\nTo " +verb+ " the same for others")
+  time.sleep(1) 
+  print("\nSo they may lead the " +verbs)
+
+
+def poemTwo():  
+  print("\n")
+  
+  noun= input("Type in a noun. ")
+  verb= input("Type in a verb that describes you. ")
+  place= input("Type in a place. ")
+  probability= input("Type in a word relating to probability. ")
+
+  print("\n")
+  
+  #prints poem
+  print(verb + " is the thing")
+  time.sleep(1) 
+  print("\nwith " + noun + " that")
+  time.sleep(1) 
+  print("\nperches in the " + noun +",")
+  time.sleep(1) 
+  print("\nand " +verb+" the tunes") 
+  time.sleep(1) 
+  print("\nwithout the " +place +",")
+  time.sleep(1) 
+  print("\nand " +probability+ " stops at all.")
+  time.sleep(1) 
+
+
+def poemThree():
+  print("\n")
+  
+  noun= input("Type in a noun. ")
+  verb= input("Type in a verb that describes you. ")
+  place= input("Type in a place. ")
+  probability= input("Type in a word relating to probability. ")
+  team= input("Type in a synonym for the word team. ")
+  emotion= input("Type in the emotion you are feeling. ")
+  dream= input("Type in a word that is something you like to do. ")
+
+  print("\n")
+  
+  #prints poem
+  print("It's not just my " +verb+ "s")
+  time.sleep(1) 
+  print("\nI am a part of a " + team)
+  time.sleep(1) 
+  print("\n" + emotion + " serving my " +noun)
+  time.sleep(1) 
+  print("\njust " +verb+"ing in the " +place) 
+  time.sleep(1)  
+  print("\nlooking out for those around me")
+  time.sleep(1) 
+  print("\neverywhere we " +verb)
+  time.sleep(1) 
+  print("\nand " +probability+" protecting those we " +dream) 
+  time.sleep(1) 
+  print("\nfar away at " +place + ".") 
+  time.sleep(1)
+
+#Code to execute
+again = "yes"
+
+while again == "yes":
+  choice= input("Type in the poem number, from 1 to 3, you want to do. ")
+  if choice == str("1"):
+    poemOne()
+
+  if choice == str("2"):
+    poemTwo()
+
+  if choice == str("3"):
+    poemThree()
+    
+  print("\n")
+  again= input("Do you want to pick another poem, yes or no: ")
+  print("\n")
